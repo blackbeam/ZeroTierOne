@@ -58,7 +58,7 @@ class OSUtils {
      * @param ... Format arguments
      * @throws std::length_error buf[] too short (buf[] will still be left null-terminated)
      */
-    static ZT_INLINE unsigned int ztsnprintf(char* buf, unsigned int len, const char* fmt, ...)
+    static unsigned int ztsnprintf(char* buf, unsigned int len, const char* fmt, ...)
     {
         va_list ap;
         va_start(ap, fmt);
